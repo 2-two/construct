@@ -1,0 +1,47 @@
+/* app.css */
+.cad-toolbar {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+  padding: 6px 10px;
+  background: #222;
+  color: #fff;
+  font-family: system-ui, sans-serif;
+  font-size: 12px;
+  border-radius: 4px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.cad-btn {
+  padding: 4px 8px;
+  background: #444;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.cad-btn.active {
+  background: #4caf50;
+}
+
+.cad-btn.snap {
+  background: #007AFF;
+}
+
+.cad-btn.delete-active {
+  background: #e53935;
+  cursor: pointer;
+}
+
+.cad-btn.delete-inactive {
+  cursor: default;
+}
+
+.cad-toolbar span {
+  margin-left: 8px;
+}
