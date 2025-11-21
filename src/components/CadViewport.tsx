@@ -38,6 +38,7 @@ export const CadViewport: FC = () => {
   const [selectedId, setSelectedId] = useState<string | null>(null)
   const controlsRef = useRef<THREE.EventDispatcher | null>(null)
 
+  void history; void redoStack;
   
   // -- history is for undo and redo --
   const pushHistory = useCallback((next: Segment[]) => {
